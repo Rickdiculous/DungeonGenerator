@@ -34,6 +34,8 @@ public class Door {
 	 * this is an enum for how the door mechanically operates.
 	 */
 	doorType type;
+	
+	
 	public Door(Material mat, boolean isLocked, boolean isSecret, doorType type, int width){
 		this.mat = mat;
 		this.isLocked=isLocked;

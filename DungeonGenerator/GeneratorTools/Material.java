@@ -2,5 +2,6 @@ package GeneratorTools;
 
 public enum Material{
 	WOOD,
-	IRON
+	IRON,
+	STONE
 }
