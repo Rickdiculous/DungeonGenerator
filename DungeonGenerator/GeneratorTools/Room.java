@@ -18,10 +18,13 @@ public class Room {
 		 * tells the user if it is a hall or not
 		 */
 		boolean isHall;
+		boolean isSpherical;
 		/**
 		 * find out how many sets of points the room needs
 		 */
 		int sides;
+		double radius;
+		
 		/**
 		 * stores the vertices of a room
 		 */
@@ -52,5 +55,18 @@ public class Room {
 		this.wallMat=wallMat;
 		this.doorLocation=doorLocation;
 		this.doors=doors;
+		isSpherical=false;
+		radius=-1;
+		
+	}
+	public Room(boolean isSpherical, double radius, Material floorMat, Material wallMat, Vector<Double>[] doorLocation, Door[] doors){
+		this.vertices=vertices;
+		this.isHall=false;
+		this.floorMat=floorMat;
+		this.wallMat=wallMat;
+		this.doorLocation=doorLocation;
+		this.doors=doors;
+		this.radius=radius;
+		
 	}
 }
